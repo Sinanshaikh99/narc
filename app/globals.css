@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:    var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html  { overflow-x: hidden; scroll-behavior: smooth; }
+body  { overflow-x: hidden; }
+img, video { max-width: 100%; display: block; }
+
+/* ── Portrait video: rotate 270° into landscape 16:9 frame ── */
+.portrait-rotated {
+  transform: rotate(270deg) scale(1.8);
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Landscape video: fill container ── */
+.video-fill {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #0A0A0A;
+}
+
+/* ── Marquee ── */
+.marquee-track {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  animation: marquee 26s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity   0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
