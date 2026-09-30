@@ -8,7 +8,17 @@
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html  { overflow-x: hidden; scroll-behavior: smooth; }
-body  { overflow-x: hidden; }
+body  {
+  overflow-x: hidden;
+  font-family: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, p { text-wrap: pretty; }
+h1, h2, h3 { font-family: var(--font-playfair), Georgia, serif; }
 img, video { max-width: 100%; display: block; }
 
 /* ── Portrait video: rotate 270° into landscape 16:9 frame ── */
