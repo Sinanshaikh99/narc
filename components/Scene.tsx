@@ -80,9 +80,9 @@ export default function SceneBlock({ scene, isLast }: Props) {
             <p
               style={{
                 fontFamily: "var(--font-inter)",
-                fontSize: 22,
-                fontWeight: 800,
-                letterSpacing: "0.6em",
+                fontSize: 11,
+                fontWeight: 600,
+                letterSpacing: "0.24em",
                 textTransform: "uppercase",
                 color: "#B08A5A",
                 marginBottom: 28,
@@ -93,7 +93,7 @@ export default function SceneBlock({ scene, isLast }: Props) {
 
             {/* Character name */}
             <h2
-              className="text-[48px] sm:text-[64px] md:text-[78px] lg:text-[92px]"
+              className="text-[42px] leading-[1.08] sm:text-[58px] md:text-[72px] lg:text-[84px]"
               style={{
                 fontFamily: "var(--font-playfair)",
                 fontWeight: 700,
@@ -316,7 +316,7 @@ function BulletSection({ label, items }: { label: string; items: string[] }) {
         {items.map((item, i) => (
           <li
             key={i}
-            className="relative text-[16px] sm:text-[17px]"
+            className="relative text-[15px] leading-[1.7] sm:text-[16px] sm:leading-[1.72]"
             style={{
               fontFamily: "var(--font-inter)",
               lineHeight: 1.72,
