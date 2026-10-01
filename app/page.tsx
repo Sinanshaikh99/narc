@@ -28,15 +28,15 @@ export default function Home() {
           {/* Cinematic statement */}
           <p
             className="
-              text-[25px]
-              leading-[1.42]
-              tracking-[-0.02em]
-              sm:text-[32px]
-              sm:leading-[1.34]
-              md:text-[40px]
-              md:leading-[1.3]
-              lg:text-[48px]
-              lg:leading-[1.24]
+              text-[21px]
+              leading-[1.45]
+              tracking-[-0.015em]
+              sm:text-[28px]
+              sm:leading-[1.38]
+              md:text-[35px]
+              md:leading-[1.32]
+              lg:text-[42px]
+              lg:leading-[1.26]
             "
             style={{
               fontFamily: "var(--font-playfair)",
