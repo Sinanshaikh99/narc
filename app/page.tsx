@@ -13,16 +13,17 @@ export default function Home() {
       <section className="px-5 pt-24 pb-36 sm:px-8 sm:pt-32 sm:pb-48 lg:px-10 lg:pt-40 lg:pb-60">
         <div className="mx-auto max-w-[920px] text-center">
 
-          {/* Small site label */}
-          <p
-            className="mb-8 text-[11px] font-medium uppercase tracking-[0.28em] sm:mb-10 sm:text-xs md:text-sm"
+          {/* Main heading */}
+          <h1
+            className="mb-10 text-[34px] font-semibold uppercase leading-[0.98] tracking-[0.08em] sm:mb-12 sm:text-[50px] md:text-[68px] lg:text-[86px]"
             style={{
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-playfair)",
+              fontWeight: 500,
               color: "#B08A5A",
             }}
           >
             Narcissism on Screen
-          </p>
+          </h1>
 
           {/* Cinematic statement */}
           <p
