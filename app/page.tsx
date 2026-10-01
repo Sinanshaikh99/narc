@@ -68,6 +68,25 @@ export default function Home() {
           />
         ))}
       </div>
+
+      <aside
+        aria-label="Disclaimer"
+        className="mt-20 w-full overflow-hidden border-y py-4 sm:mt-28 sm:py-5"
+        style={{ borderColor: "#292929", backgroundColor: "#111111" }}
+      >
+        <div className="marquee-track">
+          {[0, 1].map((copy) => (
+            <p
+              key={copy}
+              aria-hidden={copy === 1}
+              className="whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.18em] sm:text-[11px]"
+              style={{ color: "#B08A5A", fontFamily: "var(--font-inter)" }}
+            >
+              Disclaimer: The characters featured on this website are fictional, and the observations presented are intended solely for educational and psychological discussion. They have not been clinically assessed or diagnosed with Narcissistic Personality Disorder (NPD). The traits discussed are based on their portrayed behaviors and are used to help understand psychological concepts, not to label or diagnose individuals.
+            </p>
+          ))}
+        </div>
+      </aside>
     </main>
   );
 }

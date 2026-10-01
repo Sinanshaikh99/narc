@@ -42,12 +42,23 @@ img, video { max-width: 100%; display: block; }
 /* ── Marquee ── */
 .marquee-track {
   display: flex;
-  gap: 12px;
+  gap: 5rem;
   align-items: center;
   height: 100%;
   width: max-content;
-  animation: marquee 26s linear infinite;
+  animation: marquee 58s linear infinite;
   will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    width: 100%;
+  }
 }
 
 @keyframes marquee {
